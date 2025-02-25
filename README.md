@@ -2,6 +2,9 @@
 
 Machima is an AI-powered task management application that combines Kanban and Chat functionality to streamline task-related communications and project management.
 
+
+![Machima](/public/sample-image.png)
+
 ## Overview
 
 This application integrates:
