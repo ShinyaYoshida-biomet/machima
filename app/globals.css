@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #ffd700;
+    --secondary: #2f4f4f;
+    --background: #fffaf0;
+    --foreground: #1a472a;
+    --muted: #fff8dc;
+    --border: #2f4f4f;
+
+    --card: var(--background);
+    --card-foreground: var(--foreground);
+    --popover: var(--background);
+    --popover-foreground: var(--foreground);
+    --primary-foreground: var(--foreground);
+    --secondary-foreground: var(--background);
+    --muted-foreground: var(--secondary);
+    --accent: var(--primary);
+    --accent-foreground: var(--foreground);
+    --destructive: #ff0000;
+    --destructive-foreground: var(--background);
+    --ring: var(--primary);
+    --radius: 0.5rem;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--primary) 0%,
+      color-mix(in srgb, var(--primary) 70%, var(--secondary)) 100%
+    );
+  }
+}
+
